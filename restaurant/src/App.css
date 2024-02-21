@@ -51,16 +51,17 @@ section{
 
 .move-anim { animation: move 5s linear infinite; }
 
-.css-1d3z3hw-MuiOutlinedInput-notchedOutline{
-  border-color: white !important;
-  color: white !important;
-}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+fieldset{
+  border-color: white !important;
+}
+
 .MuiInputBase-input{
   color: white !important;
 }

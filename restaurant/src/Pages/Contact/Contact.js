@@ -47,7 +47,6 @@ function Contact() {
                                 <TextField
                                     sx={{
                                         backgroundColor: '#262626', borderRadius: 3,
-
                                     }}
                                     fullWidth
                                     id='name'
@@ -75,6 +74,7 @@ function Contact() {
 
                             <Stack direction={{ sm: 'row', xs: 'column' }} spacing={2.5}>
                                 <TextField
+                                   sx={{backgroundColor: '#262626'}}
                                     select
                                     id='people'
                                     label="People"
@@ -90,8 +90,9 @@ function Contact() {
                                         </MenuItem>
                                     ))}
                                 </TextField>
-                                <DatePicker style={{ width: '100%',fontSize:16, backgroundColor: 'transparent', color: "white", padding: '16px 12px' }} />
+                                <DatePicker style={{ width: '100%',fontSize:16, backgroundColor: '#262626', color: "white", padding: '16px 12px' }} />
                                 <TextField
+                                   sx={{backgroundColor: '#262626'}}
                                     select
                                     id='time'
                                     label="Time"
