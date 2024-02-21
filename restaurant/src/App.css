@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'DM Sans', sans-serif ;
+  background-color: hsla(210, 4%, 9%, 1) !important;
+  color: white !important;
+}
+
+
+
+section{
+  position: relative;
+  padding: 5rem 1% 1rem;
+  z-index: 1;
+  overflow: hidden;
+}
+
+::selection{
+  background: #E1A140;
+  color: white;
+}
+
+.nav_items a.active_link {
+  color: #E1A140 !important;
+}
+
+.headings{
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.banner_images{
+  opacity: 0;
+  transform: translateX(80px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.headings.reveal,
+.banner_images.reveal {
+  opacity: 1;
+  transform: translateX(0);
+  transform: translateY(0);
+}
+
+.move-anim { animation: move 5s linear infinite; }
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+  border-color: white !important;
+  color: white !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.MuiInputBase-input{
+  color: white !important;
+}
+
+@keyframes move {
+  0%,
+  100% { transform: translateY(0); }
+
+  50% { transform: translateY(30px); }
+}
+
+.ant-picker .ant-picker-input >input::placeholder{
+  color: white;
+}
+
+.ant-picker .ant-picker-input >input{
+  font-size: 15px;
+}
+
+.ant-picker-outlined:focus-within{
+  border-color: white !important;
+}
+
+
+.ant-picker .ant-picker-suffix{
+  color: white;
+}
+
+.ant-picker:hover{
+  border-color: white;
+}
+
+@media (max-width:1040px) {
+  #menu{
+    height: 100%;
+  }
+
+  #about{
+    height: 100%;
+  }
+
+  #contact{
+    height: 100%;
+  }
+
+}
+
+
